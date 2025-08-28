@@ -120,7 +120,7 @@ const Manager = () => {
         <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-green-400 opacity-20 blur-[100px]"></div>
       </div>
 
-      <div className=" p-3 md:pl-60 md:pr-60 md:pt-20 md:mycontainer min-h-[88.2vh]">
+      <div className=" p-3 md:mycontiner min-h[88.2vh] md:pl-60 md:pr-60 md:pt-20 md:min-h-[84.2vh]">
         <h1 className="text-4xl text font-bold text-center">
           <span className="text-green-500">&lt;</span>
           <span>Pass</span>
@@ -191,8 +191,7 @@ const Manager = () => {
         <div className="passwords">
           <h2 className="font-bold text-2xl py-4">Your Passwords</h2>
           {passwordArray.length === 0 && <div>No passwords to show</div>}
-          {passwordArray.length != 0 && (
-            <table className="table-auto w-full rounded-md overflow-hidden mb-10">
+          {passwordArray.length != 0 && <table className="table-auto w-full rounded-md overflow-hidden mb-10">
               <thead className="bg-green-800 text-white">
                 <tr>
                   <th className="py-2">Site</th>
@@ -203,8 +202,7 @@ const Manager = () => {
               </thead>
               <tbody className="bg-green-100">
                 {passwordArray.map((item, index) => {
-                  return (
-                    <tr key={index}>
+                  return <tr key={index}>
                       <td className=" py-2 border border-white text-center">
                         <div className="flex items-center justify-center">
                           <a href={item.site} target="_blank">
@@ -300,11 +298,11 @@ const Manager = () => {
                         </span>
                       </td>
                     </tr>
-                  );
+                  ;
                 })}
               </tbody>
             </table>
-          )}
+          }
         </div>
       </div>
     </>

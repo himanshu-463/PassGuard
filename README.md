@@ -1,4 +1,4 @@
-🔐 PassGuard
+🔐 PassGuard<br>
 PassGuard is a secure and user-friendly password manager that helps you generate, store, and manage strong passwords safely. It keeps your digital accounts protected with encryption and provides a simple, reliable way to access your credentials whenever you need them.
 
 🚀 Features
